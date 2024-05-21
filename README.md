@@ -15,3 +15,8 @@
    ```bash
    python main.py
    ```
+## Дополнительно
+* Запуск тестов:
+   ```bash
+   python -m unittest discover
+   ```
