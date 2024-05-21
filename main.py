@@ -17,7 +17,7 @@ def main():
     path_file_data = 'data/data.txt'
     path_file_out_data = 'data/out_data.txt'
     number_records = 12
-    fieltnames = ['Вид работы']
+    fieldnames = ['Вид работы']
 
     data = load_and_transform_data(path_file_data)
 
@@ -37,7 +37,7 @@ def main():
                          f' Формулирование заключений совместно с врачом-рентгенологом.')
         out_data.append({'Вид работы': result_string})
 
-    ProcessFile.write_csv_file(path_file_out_data, out_data, fieltnames)
+    ProcessFile.write_csv_file(path_file_out_data, out_data, fieldnames)
 
 
 if __name__ == '__main__':
